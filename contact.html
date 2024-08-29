@@ -13,7 +13,7 @@
     <!-- Responsive navbar -->
     <navbar class="bg-green-100 p-3 flex items-center justify-between shadow-xl sticky top-0 z-10">
         <h1 class="text-2xl">Greenden</h1>
-        <svg  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="w-6 h-6 and md:hidden">
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="w-6 h-6 and md:hidden">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
           </svg>
           
@@ -31,6 +31,28 @@
         </ul>
     </navbar>
 
+
+
+
+      <!----Side navbar-->
+      <section id="sidenav" class="bg-green-100 fixed top-0 -right-72 z-20 transition-all duration-1000" style="width: 50%;height: 100vh;display: flex;text-align:center;">
+        <div class="relative">
+            <p id="closenav" class="absolute top-0 -right-64 cursor-pointer">X</p>
+        </div>
+        
+
+    <ul class="flex-col flex items-center gap-10">
+        <li>
+            <a class="hover:underline hover:text-black" href="index.html">Home</a>
+        </li>
+        <li>
+            <a class="hover:underline hover:text-black" href="product.html">Products</a>
+        </li>
+        <li>
+        <a class="hover:underline hover:text-black" href="contact.html">Contact</a>
+    </li>
+    </ul>
+    </section>
 
     <!--------Contact code-->
     <section class="bg-white dark:bg-gray-900">
@@ -63,6 +85,7 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. laudantium enim sequi nostrum dolore impedit laboriosam excepturi</p>
             <p >@ 2021 Greenday.com</p>
         </section>
+        <script src="contact.js"></script>
     </body>
     
     </html>
